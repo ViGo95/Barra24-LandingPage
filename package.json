@@ -1,0 +1,24 @@
+{
+  "name": "barra24-website",
+  "version": "0.1.0",
+  "description": "Landing page for Barra 24",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "barra24"
+  ],
+  "author": "Luis Vinas",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
