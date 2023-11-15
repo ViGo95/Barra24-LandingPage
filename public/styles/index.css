@@ -55,7 +55,10 @@ body {
   height: 100vh;
   margin: 0;
   background-color: var(--color-cream);
+  overflow: hidden;
 }
+
+
 
 header {
 position: sticky;
@@ -63,29 +66,135 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: 120px;
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 60px;
 }
 
 nav img {
-  width: 140px;
+  width: 240px;
 }
 
 nav .nav_links {
-  width: 35%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
-  padding-right: 30px;
+  padding-right: 175px;
 }
 
 nav a {
   font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  /* color: var(--color-cream); */
+  line-height: normal;
+  color: var(--color-cream);
+}
+
+nav button {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-tech);
+  background-color: transparent;
+  border: 0;
+}
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+main > section {
+  display: flex;
+}
+
+
+
+.hero {
+  width: 46%;
+}
+
+
+
+.image {
+  position: absolute;
+  right: -170px;
+  width: 1250px;
+  height: 100%;
+  background-color: var(--color-tech);
+  transform: skewX(-20deg);
+}
+
+.image > .ext-ring {
+  position: absolute;
+  bottom: 37px;
+  right: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 740px;
+  height: 740px;
+  border-radius: 100%;
+  border: solid 3px var(--color-cream);
+  transform: skewX(20deg);
+}
+
+.image > .ext-ring > .int-ring {
+  width: 630px;
+  height: 630px;
+  border-radius: 100%;
+  border: solid 24px var(--color-cream);
+  border-right: solid 24px var(--color-fruit);
+  transform: rotate(20deg);
+}
+
+.image-rectangle {
+  position: absolute;
+  right: 460px;
+  width: 240px;
+  height: 100%;
+  background-color: var(--color-cream);
+  overflow: hidden;
+}
+
+.image-rectangle > .ext-ring {
+  position: absolute;
+  bottom: 37px;
+  right: -160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 740px;
+  height: 740px;
+  border-radius: 100%;
+  border: solid 3px var(--color-tech);
+  transform: skewX(20deg);
+}
+
+.image-rectangle > .ext-ring > .int-ring {
+  width: 630px;
+  height: 630px;
+  border-radius: 100%;
+  border: solid 24px var(--color-tech);
+}
+
+.image img {
+  position: absolute;
+  transform: skewX(20deg);
+  border-radius: 100%;
+  width: 630px;
+  bottom: 95px;
+  right: 358px;
 }
